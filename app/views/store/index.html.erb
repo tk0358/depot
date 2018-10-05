@@ -2,6 +2,7 @@
   <aside id="notice"><%= notice %></aside>
 <% end %>
 
+<h4>You've accessed this page <%= pluralize(session[:counter], 'time') %></h4>
 <h1>Your Pragmatic Catalog</h1>
 
 <ul class="catalog">
@@ -16,6 +17,7 @@
           </p>
           <div class="price">
             <%= number_to_currency(product.price) %>
+            <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
           </div>
         </li>
       <% end %>
