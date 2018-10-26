@@ -7,12 +7,12 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails51 for more book information.
 #---
 # be sure to change these values
-user = 'davec'
+user = 'tk0358'
 domain = 'depot.pragprog.com'
 
 # adjust if you are using RVM, remove if you are not
-set :rvm_type, :system
-set :rvm_ruby_string, 'ruby-2.5.1 /'
+#set :rvm_type, :system
+#set :rvm_ruby_string, 'ruby-2.5.1 /'
 
 # file paths
 set :application, 'depot'
